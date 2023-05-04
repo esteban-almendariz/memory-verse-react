@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 import './MainNav.css';
 
@@ -16,13 +16,10 @@ const MainNav = () => {
 
                 <div class="menu">
 
-                    <li><a >Home</a></li>
-                    <li><a >Bible</a></li>
-                    <li><a >Notes</a></li>
-                    <li><a >Videos</a></li>
-                    <li>
-                        <NavLink to='/videos' >Videos</NavLink>
-                    </li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/bible'>Bible</Link></li>
+                    <li><Link to='/notes'>Notes</Link></li>
+                    <li><Link to='/videos'>Videos</Link></li>
 
                 </div>
             </ul>
