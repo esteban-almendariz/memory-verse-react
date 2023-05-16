@@ -1,0 +1,27 @@
+.btn {
+    align-items: center;
+
+    background: hsla(197, 14%, 57%, 1);
+    background: linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
+
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: rgb(28, 13, 63) 0 2px 4px, rgb(31, 16, 65) 0 7px 13px -3px, rgb(16, 22, 62) 0 -3px 0 inset;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: inline-flex;
+    width: 150px;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: left;
+    transition: box-shadow .15s, transform .15s;
+    font-size: 14px;
+    font-weight: bold;
+}
