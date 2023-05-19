@@ -1,0 +1,30 @@
+.container-draggable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    padding: 30px;
+    background-color: rgb(178, 171, 255);
+    border-radius: 6px;
+}
+
+.draggable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 100px;
+    height: 45px;
+    background-color: white;
+    border: 2px solid rgb(4, 4, 4);
+    border-radius: 6px;
+    box-shadow: rgb(28, 13, 63) 0 2px 4px, rgb(31, 16, 65) 0 7px 13px -3px, rgb(16, 22, 62) 0 -3px 0 inset;
+    font-weight: 600;
+    cursor: move;
+}
+
+.draggable.dragging {
+    opacity: .5;
+}

@@ -6,10 +6,10 @@ import './Notes.css'
 const Notes = () => {
     return (
         <div>
-            <div class="notes-main-container">
-                <div class="notes-list-container">
+            <div className="notes-main-container">
+                <div className="notes-list-container">
                     <button>Add Note</button>
-                    <div class="notes-list">
+                    <div className="notes-list">
                         <h3>Title</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi eius, quas provident illum non
                             aperiam officia, aliquid repudiandae culpa perferendis vel deserunt quibusdam quis vitae ullam
@@ -18,7 +18,7 @@ const Notes = () => {
                     </div>
                     <hr></hr>
 
-                    <div class="notes-list">
+                    <div className="notes-list">
                         <h3>Title</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi eius, quas provident illum non
                             aperiam officia, aliquid repudiandae culpa perferendis vel deserunt quibusdam quis vitae ullam
@@ -28,9 +28,9 @@ const Notes = () => {
                 </div>
 
 
-                <div class="new-notes-container">
+                <div className="new-notes-container">
 
-                    <h1>Title</h1>
+                    <h1 className="title-notes">Title</h1>
                     <p>Notes Prev.... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, dolor delectus sunt
                         quasi debitis vel accusamus ipsum, eligendi eius neque fuga enim pariatur, numquam eos iste ex ducimus
                         voluptas at.

@@ -156,8 +156,10 @@ input[type=checkbox] {
     font-size: 3.5rem;
     padding-bottom: .2em;
     font-weight: 700;
-    background: -webkit-linear-gradient(rgb(64, 64, 64), rgb(29, 0, 246));
+    background: linear-gradient(90deg, #012ee2 2.34%, #2e2d2d 100.78%);
     -webkit-background-clip: text;
+    /* background: -webkit-linear-gradient(rgb(64, 64, 64), rgb(29, 0, 246));
+    -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
 
 }

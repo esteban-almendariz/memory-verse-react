@@ -25,3 +25,12 @@
     font-size: 14px;
     font-weight: bold;
 }
+
+.book-list {
+
+    display: grid;
+    justify-items: center;
+    grid-template-rows: repeat(16, 1fr);
+    grid-auto-flow: column;
+
+}
