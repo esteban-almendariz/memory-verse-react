@@ -1,17 +1,17 @@
 .memory-verse-section {
 
 
-    max-width: 90%;
+    max-width: 80%;
     height: auto;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 100px;
     padding: 3em 1em;
     text-align: center;
-    border: 2px solid rgb(0, 0, 0);
+    border: 0px solid rgb(0, 0, 0);
     border-radius: .1em;
     color: #000000;
-    background-color: #fff;
-    box-shadow: 8px 9px 20px 14px rgba(0, 0, 0, 0.525), 0 6px 20px 0 rgba(0, 0, 0, 0.508);
+    background-color: white;
+    box-shadow: 1px 1px 6px 1px rgba(52, 42, 65, 0.328), 0 6px 20px 0 rgba(62, 49, 82, 0.236);
     border-radius: 15px;
 
     /* background: hsla(236, 100%, 8%, 1);
@@ -36,15 +36,22 @@
 
 }
 
+.title-memory-game {
+    font-size: 3.5rem;
+    padding-bottom: .2em;
+    font-weight: 600;
+    color: black;
+}
+
 /* Modal Content/Box */
 .modal-content {
     height: auto;
     width: 75%;
-    background-color: #eeeeee;
+    /* background-color: rgb(243, 243, 243); */
     margin: auto;
     text-align: center;
     padding: 20px;
-    border: .5px solid rgb(22, 22, 22);
+    /* border: .2px solid rgb(22, 22, 22); */
     border-radius: .75em;
     color: black;
 
@@ -54,10 +61,12 @@
 
     align-items: center;
 
-    background: hsla(197, 14%, 57%, 1);
+    /* background: hsla(197, 14%, 57%, 1);
     background: linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
     background: -moz-linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%); */
+
+    background-color: #7e39ff;
 
     border: 1px solid black;
     border-radius: 6px;

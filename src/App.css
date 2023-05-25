@@ -9,15 +9,15 @@
 body {
 
   /* font-family: 'Kanit', sans-serif; */
-  font-family: 'Poppins', sans-serif;
-  background-color: #e4e4e4;
+  font-family: 'Rubik', sans-serif;
+  background-color: white;
 
 }
 
 a {
 
   text-decoration: none;
-  color: #fff;
+  color: #f8f8f8;
 
 }
 
@@ -37,17 +37,20 @@ li {
   justify-content: space-between;
   padding: 20px;
 
-  color: #fff;
-  background: hsla(236, 100%, 8%, 1);
+  color: black;
+  background-color: white;
+  border-bottom: 5px solid rgb(121, 121, 121);
+  /* background: hsla(236, 100%, 8%, 1);
   background: linear-gradient(90deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
   background: -moz-linear-gradient(90deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
-  background: -webkit-linear-gradient(90deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%); */
 
 }
 
 .nav-links a {
 
-  color: #fff;
+  color: black;
+  font-weight: 500;
 
 }
 
@@ -57,9 +60,7 @@ li {
 
   font-size: 32px;
   font-weight: 600;
-  background: -webkit-linear-gradient(rgb(255, 254, 254), rgb(200, 200, 200));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: black;
 
 }
 

@@ -4,7 +4,9 @@ import './DragAndDrop.css'
 
 const DragAndDrop = (props) => {
 
-
+    const handleDragStart = () => {
+        console.log('dragging')
+    }
 
     return (
         <div className="modal">
@@ -14,9 +16,14 @@ const DragAndDrop = (props) => {
                     <span onClick={props.handleBookList} className="closeModal">&times;</span>
                 </div>
                 <div className='container-draggable'>
-                    <Draggable>
-                        <p className='draggable'>using</p>
-                    </Draggable>
+                    <div className='container-word'>
+                        <Draggable
+                            onStart={handleDragStart}
+                        >
+
+                            <p className='draggable'>using</p>
+                        </Draggable>
+                    </div>
                     <Draggable>
                         <div>
                             <p className='draggable'>React</p>
@@ -44,12 +51,12 @@ const DragAndDrop = (props) => {
                 </div>
                 <div>
                     <div className="container-draggable">
-                        <p className="draggable" >1</p>
-                        <p className="draggable" >2</p>
-                        <p className="draggable" >3</p>
-                        <p className="draggable">4</p>
-                        <p className="draggable">5</p>
-                        <p className="draggable">6</p>
+                        <p className="container-drop" >1</p>
+                        <p className="container-drop" >2</p>
+                        <p className="container-drop" >3</p>
+                        <p className="container-drop">4</p>
+                        <p className="container-drop">5</p>
+                        <p className="container-drop">6</p>
                     </div>
                 </div>
             </div>
