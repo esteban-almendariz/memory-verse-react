@@ -6,57 +6,6 @@
 
 }
 
-body {
-
-    /* font-family: 'Kanit', sans-serif; */
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
-
-}
-
-
-/* MEDIA QUERIES */
-
-@media (max-width: 768px) {
-    .menu {
-
-        display: none;
-        position: absolute;
-        color: rgb(1, 33, 178);
-        background-color: rgb(33, 33, 33);
-        right: 0;
-        left: 0;
-        text-align: center;
-        padding: 16px 0;
-
-    }
-
-    .menu li:hover {
-
-        display: inline-block;
-        background-color: rgba(0, 0, 202, 0.966);
-        transition: 0.3s ease;
-
-    }
-
-    .menu li+li {
-
-        margin-top: 12px;
-
-    }
-
-    input[type=checkbox]:checked~.menu {
-
-        display: block;
-
-    }
-
-    .hamburger {
-
-        display: block;
-
-    }
-}
 
 .title {
 
@@ -64,12 +13,6 @@ body {
     padding-bottom: .2em;
     font-weight: 600;
     color: white
-        /* background: linear-gradient(90deg, #012ee2 2.34%, #2e2d2d 100.78%);
-    -webkit-background-clip: text; */
-        /* background: -webkit-linear-gradient(rgb(64, 64, 64), rgb(29, 0, 246));
-    -webkit-background-clip: text; */
-
-
 }
 
 .quote {

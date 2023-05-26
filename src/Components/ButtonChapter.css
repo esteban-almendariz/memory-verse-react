@@ -1,9 +1,22 @@
 .btnChapter {
+    background-color: white;
+    border: 1.8px solid #7e39ff;
+    /* box-shadow: rgb(28, 13, 63) 0 2px 4px, rgb(31, 16, 65) 0 4px 8px -3px, rgb(16, 22, 62) 0 -1px 0 inset; */
+    color: #7e39ff;
     border-radius: 50%;
     width: 75px;
     height: 75px;
-    font-size: 2rem;
+    font-size: 1.7rem;
+    font-weight: 600;
     margin: 0;
+}
+
+.btnChapter:hover {
+    background: #7e39ff;
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #808080 0 -1px 0 inset;
+    color: white;
+    border: 1.5px solid #7e39ff;
+    transform: translateY(-2px);
 }
 
 .modal-chapter {

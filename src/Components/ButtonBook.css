@@ -1,15 +1,11 @@
-.btn {
+.btn-book {
     align-items: center;
 
-    background: hsla(197, 14%, 57%, 1);
-    background: linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
-
-    border: 1px solid black;
+    background-color: white;
+    border: 1px solid #7e39ff;
     border-radius: 6px;
-    box-shadow: rgb(28, 13, 63) 0 2px 4px, rgb(31, 16, 65) 0 7px 13px -3px, rgb(16, 22, 62) 0 -3px 0 inset;
-    color: rgb(0, 0, 0);
+    /* box-shadow: rgb(28, 13, 63) 0 2px 4px, rgb(31, 16, 65) 0 4px 8px -3px, rgb(16, 22, 62) 0 -1px 0 inset; */
+    color: #7e39ff;
     cursor: pointer;
     display: inline-flex;
     width: 150px;
@@ -22,8 +18,21 @@
     padding-right: 8px;
     text-align: left;
     transition: box-shadow .15s, transform .15s;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
+}
+
+.btn-book:hover {
+    background: #7e39ff;
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #808080 0 -1px 0 inset;
+    color: white;
+    border: 1.5px solid #7e39ff;
+    transform: translateY(-2px);
+}
+
+.btn-book:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
 }
 
 .book-list {

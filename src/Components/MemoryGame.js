@@ -39,7 +39,7 @@ const MemoryGame = () => {
     return (
         <main className="memory-verse-section">
             <h1 className="title-memory-game">Memory Game</h1>
-            <button className="btn" onClick={handleBookList} id="verseBtn">Select Verse</button>
+            <button className="btn-select-verse" onClick={handleBookList}>Select Verse</button>
 
             {showBookList && <ButtonBook
                 handleBookList={handleBookList}

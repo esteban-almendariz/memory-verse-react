@@ -4,8 +4,8 @@
     max-width: 80%;
     height: auto;
     margin: auto;
-    margin-top: 100px;
-    padding: 3em 1em;
+    margin-top: 50px;
+    padding: 2em 1em;
     text-align: center;
     border: 0px solid rgb(0, 0, 0);
     border-radius: .1em;
@@ -57,21 +57,13 @@
 
 }
 
-.btn {
-
+.btn-select-verse {
     align-items: center;
-
-    /* background: hsla(197, 14%, 57%, 1);
-    background: linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%); */
-
     background-color: #7e39ff;
-
-    border: 1px solid black;
-    border-radius: 6px;
-    box-shadow: rgb(28, 13, 63) 0 2px 4px, rgb(31, 16, 65) 0 7px 13px -3px, rgb(16, 22, 62) 0 -3px 0 inset;
-    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 14px;
+    box-shadow: 1px 1px 6px 1px rgba(52, 42, 65, 0.328), 0 6px 20px 0 rgba(62, 49, 82, 0.236);
+    color: white;
     cursor: pointer;
     display: inline-flex;
     width: 150px;
@@ -84,33 +76,24 @@
     padding-right: 8px;
     text-align: left;
     transition: box-shadow .15s, transform .15s;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
 }
 
-
-.btn:hover {
-    background: #fff;
-    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #808080 0 -1px 0 inset;
-    transform: translateY(-1px);
-    border: 1.5px solid #3c4fe0;
-
+.btn-select-verse:hover {
+    background-color: white;
+    color: #7e39ff;
+    transition: 0.2s ease;
+    border: 1px solid #7e39ff;
 }
+
+
 
 .modal-content button:focus {
-    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    box-shadow: #7e39ff 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #7e39ff 0 -3px 0 inset;
 }
 
-.modal-content button:hover {
-    background: #fff;
-    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-    transform: translateY(-2px);
-}
 
-.modal-content button:active {
-    box-shadow: #3c4fe0 0 3px 7px inset;
-    transform: translateY(2px);
-}
 
 
 .header-book-list {
@@ -132,10 +115,10 @@
 
 
     position: absolute;
-    top: -.75em;
-    right: -.4em;
-    color: rgb(0, 0, 0);
-    font-size: 22px;
+    top: -.2em;
+    right: 1em;
+    color: #7e39ff;
+    font-size: 32px;
     font-weight: bold;
 
 }

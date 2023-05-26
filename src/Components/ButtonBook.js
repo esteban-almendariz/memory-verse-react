@@ -14,7 +14,7 @@ const ButtonBook = (props) => {
                 {bookList.map(book => {
                     return (
                         <button
-                            className='btn'
+                            className='btn-book'
                             onClick={props.clickBook}
                         >{book.title}</button>
                     )
