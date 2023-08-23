@@ -1,12 +1,31 @@
-import Draggable, { DraggableCore } from 'react-draggable'
+
+import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd'
+import { useState } from 'react'
 import './DragAndDrop.css'
 
 
 const DragAndDrop = (props) => {
 
+    const [completedTodos, setCompletedTodos] = useState([])
+    const [verse, setVerse] = useState(['Do', 'not', 'be', 'anxious','about','any','thing'])
+
     const handleDragStart = () => {
         console.log('dragging')
     }
+
+    const verseElements = verse.map((word,index) => {
+        return (
+            <Draggable key={index} draggableId={index} index={index}>
+                {(provided) => (
+                    <li {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}>
+                        <span>{word}</span>
+                    </li>
+                )}
+                
+            </Draggable>
+            
+        )
+    })
 
     return (
         <div className="modal">
@@ -15,40 +34,35 @@ const DragAndDrop = (props) => {
                     <h4 className="book-title">Drag and Drop</h4>
                     <span onClick={props.handleBookList} className="closeModal">&times;</span>
                 </div>
-                <div className='container-draggable'>
-                    <div className='container-word'>
-                        <Draggable
-                            onStart={handleDragStart}
-                        >
-
-                            <p className='draggable'>using</p>
-                        </Draggable>
+                <DragDropContext>
+                    <div className='draggable-container'>
+        
+                        <Droppable droppableId='characters'>
+                            {(provided) => (
+                                <ul className='characters' {...provided.droppableProps} ref={provided.innerRef}>
+                                    <div className='verse-container-bottom'>
+                                        <h3>Completed Tasks</h3>
+                                        {verse.map((word,index) => {
+                                            return (
+                                                <Draggable key={index} draggableId={index} index={index}>
+                                                    {(provided) => (
+                                                        <li {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}>
+                                                            <span>{word}</span>
+                                                        </li>
+                                                    )}
+                                                    
+                                                </Draggable>
+                                                
+                                            )
+                                        })}
+                                    </div>
+                                </ul>
+                            )}
+                            
+                        </Droppable>
                     </div>
-                    <Draggable>
-                        <div>
-                            <p className='draggable'>React</p>
-                        </div>
-                    </Draggable>
-                    <Draggable>
-                        <div>
-                            <p className='draggable'>Drag</p>
-                        </div>
-                    </Draggable>
-                    <Draggable>
-                        <div>
-                            <p className='draggable'>order</p>
-                        </div>
-                    </Draggable>
-                    <Draggable>
-                        <div >
-                            <p className='draggable'>in</p>
-                        </div>
-                    </Draggable><Draggable>
-                        <div>
-                            <p className='draggable'>verse</p>
-                        </div>
-                    </Draggable>
-                </div>
+                </DragDropContext>
+
                 <div>
                     <div className="container-draggable">
                         <p className="container-drop" >1</p>

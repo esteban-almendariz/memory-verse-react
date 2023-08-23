@@ -69,3 +69,29 @@
 .draggable:active {
     opacity: .5;
 }
+
+.draggable-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    padding: 30px;
+    background-color: rgb(178, 171, 255);
+    border-radius: 6px;
+}
+
+.verse-container-top {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.verse-container-top:hover, .verse-container-bottom:hover {
+    box-shadow: 0 0 5px purple;
+    transform: scale(1.03);
+}
+
+.verse-container-bottom {
+    background-color: white;
+    padding: 15px;
+}
