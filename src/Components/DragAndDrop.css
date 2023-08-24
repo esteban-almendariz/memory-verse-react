@@ -95,3 +95,8 @@
     background-color: white;
     padding: 15px;
 }
+
+.verse-word {
+    padding: 15px;
+    border: 1px solid purple;
+}
