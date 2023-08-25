@@ -30,8 +30,14 @@ const DragAndDrop = (props) => {
 
     const handleDragDrop = (results) => {
         const {source, destination,type} = results
+        console.log(results)
 
-        if(!destination) return;
+        if(!destination) return
+        if(source.droppableId===destination.droppableId && source.index===destination.index) return;
+
+        if(type === 'group') {
+            const reorderVerse = [...verse]
+        }
     }
 
     return (
@@ -43,7 +49,7 @@ const DragAndDrop = (props) => {
                 </div>
         
                 <DragDropContext  onDragEnd={handleDragDrop}>
-                    <Droppable droppableId='characters'>
+                    <Droppable droppableId='ROOT' type='group'>
                         {(provided) => (
                             <ul className='characters' {...provided.droppableProps} ref={provided.innerRef}>
                                 {verse.map((verse, index) => (
