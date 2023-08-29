@@ -37,7 +37,21 @@ const DragAndDrop = (props) => {
 
         if(type === 'group') {
             const reorderVerse = [...verse]
+            const sourceIndex = source.index
+            const destinationIndex = destination.index
+
+            const [removedVerse] = reorderVerse.splice(sourceIndex,1)
+            reorderVerse.splice(destinationIndex, 0, removedVerse)
+            setVerse(reorderVerse)
         }
+    }
+
+    const VerseList = () => {
+        return (
+            <div>
+                <h3>Verse List From Component</h3>
+            </div>
+        )
     }
 
     return (
@@ -51,7 +65,8 @@ const DragAndDrop = (props) => {
                 <DragDropContext  onDragEnd={handleDragDrop}>
                     <Droppable droppableId='ROOT' type='group'>
                         {(provided) => (
-                            <ul className='characters' {...provided.droppableProps} ref={provided.innerRef}>
+                            <div>
+                                <ul className='draggable-container' {...provided.droppableProps} ref={provided.innerRef}>
                                 {verse.map((verse, index) => (
                                         <Draggable key={verse.id} draggableId={verse.id} index={index}>
                                             {(provided) => (
@@ -62,8 +77,11 @@ const DragAndDrop = (props) => {
                                         </Draggable>
                                          
                                         )
+                                
                                      )}
-                            </ul>
+                                     
+                                 </ul>
+                            </div>
                         )}
                         
                     </Droppable>
