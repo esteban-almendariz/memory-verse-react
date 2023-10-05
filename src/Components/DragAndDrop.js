@@ -125,30 +125,7 @@ const DragAndDrop = (props) => {
                     <span onClick={props.handleBookList} className="closeModal">&times;</span>
                 </div>
         
-                {/* <DragDropContext  onDragEnd={handleDragDrop}>
-                    <Droppable droppableId='ROOT' type='group'>
-                        {(provided) => (
-                            <div>
-                                <ul className='draggable-container' {...provided.droppableProps} ref={provided.innerRef}>
-                                {verse.map((verse, index) => (
-                                        <Draggable key={verse.id} draggableId={verse.id} index={index}>
-                                            {(provided) => (
-                                                <li ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
-                                                    <li className='draggable'>{verse.value}</li>
-                                                </li>
-                                            )}
-                                        </Draggable>
-                                         
-                                        )
-                                
-                                     )}
-                                     
-                                 </ul>
-                            </div>
-                        )}
-                        
-                    </Droppable>
-                </DragDropContext> */}
+            
 
                 <DragDropContext onDragEnd= {result => onDragEnd(result, columns, setColumns)}>
                     {/* Each droppable will have its own key */}
@@ -157,7 +134,7 @@ const DragAndDrop = (props) => {
                         <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
                         <h2>{column.name}</h2>
                         <div style={{margin: 8}}>
-                            <Droppable key={id} droppableId={id}>
+                            <Droppable key={id} droppableId={id} direction='horizontal'>
                             {(provided, snapshot) => {
                                 return (
                                 <div
@@ -166,10 +143,10 @@ const DragAndDrop = (props) => {
                                     style={{
                                     display: 'flex',
                                     flexDirection: 'row',
-                                    gap: 20,
+                                    gap: '20px',
                                     background: snapshot.isDraggingOver ? 'lightblue' : 'lightgrey',
                                     padding: 4,
-                                    width: 250,
+                                    width:700,
                                     minHeight: 250
                                     }}
                                 >
@@ -184,9 +161,10 @@ const DragAndDrop = (props) => {
                                                 {...provided.dragHandleProps}
                                                 style={{
                                                 userSelect: 'none',
-                                                padding: 16,
-                                                margin: '0 0 8px 0',
-                                                minHeight: '50px',
+                                                padding: '10px',
+                                                borderRadius: '6px',
+                                                width: '100px',
+                                                height: '45px',
                                                 backgroundColor: snapshot.isDragging ? '#263B4A' : '#456C86',
                                                 color: 'white',
                                                 ...provided.draggableProps.style
