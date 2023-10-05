@@ -27,7 +27,7 @@ const DragAndDrop = (props) => {
 
     
 
-    const itemsFromBackend = [
+        const itemsFromBackend = [
         { id: uuidv4(), content: 'Jesus'},
         { id: uuidv4(), content: 'said'},
         { id: uuidv4(), content: 'to'},
@@ -164,10 +164,13 @@ const DragAndDrop = (props) => {
                                     {...provided.droppableProps}
                                     ref={provided.innerRef}
                                     style={{
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    gap: 20,
                                     background: snapshot.isDraggingOver ? 'lightblue' : 'lightgrey',
                                     padding: 4,
                                     width: 250,
-                                    minHeight: 500
+                                    minHeight: 250
                                     }}
                                 >
                                     {column.items.map((item, index) => {
