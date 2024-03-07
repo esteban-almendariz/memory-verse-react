@@ -81,8 +81,7 @@ li {
   border-radius: 5px;
   transition: 0.3s ease;
   color: white;
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #d8ddff 0 -1px 0 inset;
-  transform: translateY(-1px);
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px;
 }
 
 .nav-links a:hover {

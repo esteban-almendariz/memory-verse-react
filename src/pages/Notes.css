@@ -25,12 +25,12 @@ hr {
     margin-bottom: 20px;
     padding: 1em 1em;
 
-    border: 2px solid rgb(0, 0, 0);
+    /* border: 2px solid rgb(0, 0, 0); */
     border-radius: 15px;
     color: #000000;
     background-color: #fff;
-    box-shadow: 8px 9px 20px 14px rgba(0, 0, 0, 0.525),
-        0 6px 20px 0 rgba(0, 0, 0, 0.508);
+    box-shadow: 1px 1px 6px 1px rgba(52, 42, 65, 0.328), 0 6px 20px 0 rgba(62, 49, 82, 0.236);
+        border: 0px solid rgb(0, 0, 0);
 }
 
 .test {
@@ -98,13 +98,11 @@ p {
     padding: 0 1.5em;
     display: flex;
     flex-direction: column;
-    border: 2px solid rgb(0, 0, 0);
+    border: 0px solid rgb(0, 0, 0);
     border-radius: 15px;
     color: #000000;
     background-color: #fff;
-    box-shadow: 8px 9px 20px 14px rgba(0, 0, 0, 0.525),
-        0 6px 20px 0 rgba(0, 0, 0, 0.508);
-    /* height: 100vh; */
+    box-shadow: 1px 1px 6px 1px rgba(52, 42, 65, 0.328), 0 6px 20px 0 rgba(62, 49, 82, 0.236);
 }
 
 .new-notes-container h1 {
