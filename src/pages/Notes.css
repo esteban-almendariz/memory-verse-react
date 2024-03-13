@@ -112,7 +112,8 @@ p {
 }
 
 .title-notes {
-    background: linear-gradient(90deg, #2a52f4 2.34%, #2e2d2d 100.78%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* background: linear-gradient(90deg, #2a52f4 2.34%, #2e2d2d 100.78%); */
+        color: purple;
+        /* -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
 }
